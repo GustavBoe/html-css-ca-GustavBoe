@@ -4,12 +4,32 @@
 /* These are marked with an underscore: */
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
-
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+header{
+  background-color: rgba(10, 54, 65, 1);
+}
+.logo{
+  max-height: 50px;
+  width: auto;
+  background-color: rgba(10, 54, 65, 1) ;
+  
 }
 
-h1{
+nav li{
+  display: inline-block; 
   font-family: Bebas Neue;
 }
+nav a{
+  text-decoration: none;
+  font-weight:lighter;
+  color: white;
+}
+
+nav a:hover{
+  font-weight: bolder;
+  color: bisque;
+
+  
+}
+
+
+
