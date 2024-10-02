@@ -10,10 +10,6 @@ body {
   background-color: var(--color-secondary);
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+h1{
+  font-family: Bebas Neue;
 }
