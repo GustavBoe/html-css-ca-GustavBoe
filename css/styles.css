@@ -5,6 +5,10 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
+body{
+  font-family: Bebas Neue;
+  color: rgba(10, 54, 65, 1)
+}
 header{
   background-color: rgba(10, 54, 65, 1);
 }
@@ -27,35 +31,53 @@ nav a:hover{
   font-weight: bolder;
   color: bisque;
 }
-* {
-  outline: 1px solid red !important;
+.current{
+  color: bisque;
+  font-size: larger;
+}
+.homebanner{
+  background-image: url(/assets/images/fall24collection.jpg);
+  background-size:cover;
+	background-repeat: no-repeat;
+  color: white;
 }
 .productbanner{
   background-image: url(/assets/images/allproducts.jpg);
   background-size:cover;
 	background-repeat: no-repeat;
-  font-family: Bebas Neue;
   color: white;
 }
-.jackets, .jackets a{
-  font-family: Bebas Neue;
+#shopmen a{
+  background-image: url(/assets/images/shopmen.jpg);
+  text-decoration: none;
+  color:rgba(10, 54, 65, 1) ;
+
+}
+#shopwomen a{
+  background-image: url(/assets/images/shopwomen.jpg);
+  text-decoration: none;
+  color:white ;
+}
+.jackets,.jackets li, .jackets a{
+  display: inline-block;
   color: rgba(10, 54, 65, 1);
   text-decoration: none;
 }
 .jacketpictures{
   max-height: 50px;
 }
+#specific-jacket{
+  max-height: 100px;
+}
 footer, footer a{
-  font-family: Bebas Neue;
   color: white;
   background-color: rgba(10, 54, 65, 1);
   text-decoration: none;
 }
-.about-h1{
-  font-family: Bebas Neue;
-}
+
+
 .about-paragraph{
-  font-family: Brygada 1918;
+  font-family: Brygada1918;
 }
 .about-picture{
   max-height: 300px;
