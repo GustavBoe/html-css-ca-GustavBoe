@@ -75,7 +75,7 @@ nav a:hover{
 .about-picture{
   max-height: 300px;
 }
-.specific-buy-button{
+.buy-button{
   font-family: Bebas Neue;
   font-size: 36px;
   color: white;
@@ -84,7 +84,7 @@ nav a:hover{
   border: none;
   cursor: pointer;
 }
-.specific-buy-button:active{
+.buy-button:active{
   color: white;
   background-color:green;
 }

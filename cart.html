@@ -51,7 +51,37 @@
         </ul>
       </nav>
     </header>
-    <a href="/checkout_success.html">Buy</a>
+    <form action="/checkout_success.html" method="get">
+      <label for="name">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="liame.aimle@mail.com"
+      />
+      <label for="name">Cardholders name:</label>
+      <input
+        type="text"
+        id="cardholdername"
+        name="cardholdername"
+        placeholder="Ola Norseman"
+      />
+      <label for="name">Card number:</label>
+      <input
+        type="tel"
+        id="cardnumber"
+        name="cardnumber"
+        placeholder="1111-2222-3333-1111"
+      />
+      <label for="name">Card expires in:</label>
+      <input
+        type="text"
+        id="expirationdate"
+        name="expirationdate"
+        placeholder="01/99"
+      />
+      <button class="buy-button">Buy</button>
+    </form>
     <footer>
       <p>®Rainydays2024</p>
       <a href="/about.html">About</a>
