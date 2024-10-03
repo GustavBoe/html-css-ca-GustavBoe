@@ -4,6 +4,7 @@
 /* These are marked with an underscore: */
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
+
 header{
   background-color: rgba(10, 54, 65, 1);
 }
@@ -13,7 +14,6 @@ header{
   background-color: rgba(10, 54, 65, 1) ;
   
 }
-
 nav li{
   display: inline-block; 
   font-family: Bebas Neue;
@@ -23,15 +23,42 @@ nav a{
   font-weight:lighter;
   color: white;
 }
-
 nav a:hover{
   font-weight: bolder;
   color: bisque;
-
-  
 }
 * {
   outline: 1px solid red !important;
+}
+.productbanner{
+  background-image: url(/assets/images/allproducts.jpg);
+  background-size:cover;
+	background-repeat: no-repeat;
+  font-family: Bebas Neue;
+  color: white;
+}
+.jackets, .jackets a{
+  font-family: Bebas Neue;
+  color: rgba(10, 54, 65, 1);
+  text-decoration: none;
+}
+.jacketpictures{
+  max-height: 50px;
+}
+footer, footer a{
+  font-family: Bebas Neue;
+  color: white;
+  background-color: rgba(10, 54, 65, 1);
+  text-decoration: none;
+}
+.about-h1{
+  font-family: Bebas Neue;
+}
+.about-paragraph{
+  font-family: Brygada 1918;
+}
+.about-picture{
+  max-height: 300px;
 }
 
 
