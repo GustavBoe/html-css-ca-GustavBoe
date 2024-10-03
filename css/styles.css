@@ -69,6 +69,25 @@ nav a:hover{
 #specific-jacket{
   max-height: 100px;
 }
+.information-text{
+  font-family: Brygada1918;
+}
+.about-picture{
+  max-height: 300px;
+}
+.specific-buy-button{
+  font-family: Bebas Neue;
+  font-size: 36px;
+  color: white;
+  background-color: rgba(10, 54, 65, 1);
+  padding: 10px 45px;
+  border: none;
+  cursor: pointer;
+}
+.specific-buy-button:active{
+  color: white;
+  background-color:green;
+}
 footer, footer a{
   color: white;
   background-color: rgba(10, 54, 65, 1);
@@ -76,12 +95,7 @@ footer, footer a{
 }
 
 
-.about-paragraph{
-  font-family: Brygada1918;
-}
-.about-picture{
-  max-height: 300px;
-}
+
 
 
 
