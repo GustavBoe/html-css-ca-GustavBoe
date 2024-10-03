@@ -30,6 +30,10 @@ nav a:hover{
 
   
 }
+* {
+  outline: 1px solid red !important;
+}
+
 
 
 
