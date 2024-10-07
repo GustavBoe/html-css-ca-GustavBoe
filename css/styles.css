@@ -7,9 +7,20 @@
 
 body{
   font-family: Bebas Neue;
-  color: rgba(10, 54, 65, 1)
+  color: rgba(10, 54, 65, 1);
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "header header header header"
+  "banner banner banner banner"
+  "shopmen shopmen shopwomen shopwomen"
+  "skiing skiing hiking hiking"
+  "running running biking biking"
+  "footer footer footer footer"
+
 }
 header{
+  grid-area: header;
   background-color: rgba(10, 54, 65, 1);
 }
 .logo{
@@ -34,6 +45,7 @@ nav a:hover{
   font-size: larger;
 }
 .homebanner{
+  grid-area: banner;
   background-image: url(/assets/images/fall24collection.jpg);
   background-size:cover;
 	background-repeat: no-repeat;
@@ -61,10 +73,7 @@ nav a:hover{
   color: white;}
 
 #shopmen {
-  margin-top: 2em;
-	margin-right: 2em;
-	margin-bottom: 2em;
-  margin-left: 2em;
+  grid-area: shopmen;
   background-image: url(/assets/images/shopmen.jpg);
   background-size:cover;
 	background-repeat: no-repeat;
@@ -78,10 +87,7 @@ nav a:hover{
 
 }
 #shopwomen {
-  margin-top: 2em;
-	margin-right: 2em;
-	margin-bottom: 2em;
-  margin-left: 2em;
+  grid-area: shopwomen;
   background-image: url(/assets/images/shopwomen.jpg);
   background-size:cover;
 	background-repeat: no-repeat;
@@ -90,6 +96,18 @@ nav a:hover{
   min-height: 300px;
   text-decoration: none;
   color:white ;
+}
+#skiing-icon{
+  grid-area: skiing;
+}
+#hiking-icon{
+  grid-area: hiking;
+}
+#running-icon{
+  grid-area: running;
+}
+#biking-icon{
+  grid-area: biking;
 }
 .jackets,.jackets li, .jackets a{
   display: inline-block;
@@ -123,14 +141,8 @@ nav a:hover{
   background-color:green;
 }
 footer, footer a{
+  grid-area: footer;
   color: white;
   background-color: rgba(10, 54, 65, 1);
   text-decoration: none;
 }
-
-
-
-
-
-
-
