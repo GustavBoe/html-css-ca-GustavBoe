@@ -4,3 +4,26 @@
 /* These are marked with an underscore: */
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
+header{
+  background-color:rgba(10, 54, 65, 1) ;
+}
+.navbar{ 
+  display: flex;
+  justify-content: space-evenly; 
+}
+.navbar ul{
+  padding: 0px;
+}
+.navbar li{
+  display: inline;  
+}
+.navbar a{
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+.nav-logo img{
+  max-width: 100px;
+  max-height: auto;
+  background-color: rgba(10, 54, 65, 1);
+}
