@@ -6,43 +6,65 @@
 /* Feel free to add as many of these imports as you need */
 html, body{
   height: 100%;
+  font-family: Bebas Neue;
 }
+@media (min-width: 315px ){
+
 header{
   background-color:rgba(10, 54, 65, 1) ;
 
 }
 .navbar{ 
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
+  text-align: justify; 
 }
 .navbar ul{
-  padding: 0px;
+  padding: 0%;
 }
 .navbar li{
   display: inline;  
 }
 .navbar a{
-  padding: 5px;
+  margin: 3vw;
   color: white;
   text-decoration: none;
+  
 }
 .nav-logo img{
-  max-width: 100px;
-  max-height: auto;
+  width: 20vw;
+  height: auto;
   background-color: rgba(10, 54, 65, 1);
 }
 
 .container{
   display: flex;
   flex-direction: column;
-
 }
-.index-banner img{
+.index-banner{
+  position: relative;
+  height: 40vh;
+}
+.index-banner-img{
   width: 100%;
-  height: 25vh;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%;
+  object-fit: cover;
+	object-position: center;
+	margin: 0;
+}
+.index-banner-text{
+  position: absolute;
+	inset: 0;
+	padding: 1rem;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.index-banner-text a{
+  text-decoration: none;
+  color: white;
+  font-size: 10vh;
 }
 
 .wrapper{
@@ -50,17 +72,25 @@ header{
   flex-direction: row;
 }
 
-.shop-men img{
+.shop-men-image {
   flex: 1;
-  max-width:50vw;
-  max-height: 50vh;
+  width:50vw;
+  height:auto;
+  padding: 2%;
+  padding-right: 1%;
 }
-.shop-women img{ 
+.shop-men-text{	
+}
+.shop-women-image { 
   flex: 2;
-  max-width: 50vw;
-  max-height: 50vh;
-
+  width: 50vw;
+  height: auto;
+  padding: 2%;
+  padding-left: 1%;
+}
+.shop-women-text{
 }
 footer{
   background-color:rgba(10, 54, 65, 1) ;
+}
 }
