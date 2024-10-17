@@ -8,7 +8,7 @@ html, body{
   height: 100%;
   font-family: Bebas Neue;
 }
-@media (min-width: 315px ){
+@media (min-width: 315px) and (max-width: 1600px) {
 
 header{
   background-color:rgba(10, 54, 65, 1) ;
@@ -37,11 +37,10 @@ header{
   height: auto;
   background-color: rgba(10, 54, 65, 1);
 }
-
-
 .index-banner{
   position: relative;
   height: 40vh;
+  padding-top:1% ;
 }
 .index-banner-img{
   width: 100%;
@@ -64,26 +63,26 @@ header{
   color: white;
   font-size: 12vh;
 }
-
 .wrapper{
   display: flex;
   flex-direction: row;
 }
 
-.shop-men {
+.shop-men, .shop-women {
   flex: 1;
   width:50vw;
   height:auto;
   position: relative;
+  padding-top: 1%;
 }
-.shop-men-image{
+.shop-men-image, .shop-women-image{
   width: 100%;
   height: auto;
   object-fit: cover;
 	object-position: center;
 	margin: 0;
 }
-.shop-men-text{	
+.shop-men-text, .shop-women-text{	
   position: absolute;
   inset: 0;
   display: flex;
@@ -91,45 +90,34 @@ header{
   justify-content: center;
   text-align: center;
   }
-.shop-men-text a{
+.shop-men-text a, .shop-women-text a{
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 7vh;
 }
-.shop-women{
-  flex: 1;
-  width:70vw;
-  height:auto;
-  position:relative;
-}
-.shop-women-image{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-	object-position: center;
-	margin: 0;
-}
-.shop-women-text {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.shop-women-text a{
-  text-decoration: none;
-  color: white;
-  font-size: 7vh;
-}
-
 .index-icon-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "skiing hiking"
+  "running biking" 
 }
 .skiing-icon, .hiking-icon, .running-icon, .biking-icon{
     display: inline-block;
+}
+.skiing-icon{
+  grid-area:skiing ;
+}
+.hiking-icon{
+  grid-area:hiking ;
+}
+.running-icon{
+  grid-area: running;
+}
+.biking-icon{
+  grid-area: biking;
 }
 
 }
