@@ -122,12 +122,22 @@ header{
   font-size: 5vh;
 }
 
+.index-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.skiing-icon, .hiking-icon, .running-icon, .biking-icon{
+    display: inline-block;
+}
+
+}
 
 
 footer{
   background-color:rgba(10, 54, 65, 1) ;
 }
-}
+
 
 
 
