@@ -29,6 +29,7 @@ header{
   margin: 3vw;
   color: white;
   text-decoration: none;
+  font-size: 100%;
   
 }
 .nav-logo img{
@@ -61,7 +62,7 @@ header{
 .index-banner-text a{
   text-decoration: none;
   color: white;
-  font-size: 10vh;
+  font-size: 12vh;
 }
 
 .wrapper{
@@ -93,7 +94,7 @@ header{
 .shop-men-text a{
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 5vh;
+  font-size: 7vh;
 }
 .shop-women{
   flex: 1;
@@ -119,7 +120,7 @@ header{
 .shop-women-text a{
   text-decoration: none;
   color: white;
-  font-size: 5vh;
+  font-size: 7vh;
 }
 
 .index-icon-container {
