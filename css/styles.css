@@ -7,6 +7,7 @@
 html, body{
   height: 100%;
   font-family: Bebas Neue;
+  color: rgba(10, 54, 65, 1);
 }
 header{
   background-color:rgba(10, 54, 65, 1) ;
@@ -26,7 +27,7 @@ header{
   padding: 0%;
 }
 .navbar li{
-  display: inline;  
+  display: inline-block;  
 }
 .navbar a{
   margin: 3vw;
@@ -40,6 +41,29 @@ header{
   height: auto;
   background-color: rgba(10, 54, 65, 1);
 }
+footer{
+  background-color:rgba(10, 54, 65, 1) ;
+  height: 40%;
+  margin-top: 10%;
+  padding: 10%;
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 60% 70%;
+  align-items: center;
+  align-content: center;
+}
+
+footer p, footer a{
+  display: inline-block;
+  margin: 0%;
+  padding-top:1em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: white;
+  font-size: 3vh;
+}
+/* Index page*/
 .index-banner{
   position: relative;
   height: 40vh;
@@ -69,13 +93,14 @@ header{
 .wrapper{
   display: flex;
   flex-direction: row;
+  margin-bottom: 10%;
 }
 .shop-men, .shop-women {
   flex: 1;
   width:50vw;
   height:auto;
   position: relative;
-  padding-top: 1%;
+  padding: 1%;
 }
 .shop-men-image, .shop-women-image{
   width: 100%;
@@ -100,33 +125,74 @@ header{
 .index-icon-container {
   padding: 10%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 100% 100%;
   justify-items: center;
-  grid-template-areas:
-  "skiing hiking"
-  "running biking" 
+  align-items: center;
+  align-content: center;
 }
-.skiing-icon, .hiking-icon, .running-icon, .biking-icon{
-    display: inline-block;
-    margin: 100%;
+.index-icon-container i{
+  font-size: 3em;
+  color: rgba(10, 54, 65, 1); 
 }
-.skiing-icon{
-  grid-area:skiing ;
+.running-icon i, .biking-icon i{
+  padding-top:50px;
 }
-.hiking-icon{
-  grid-area:hiking ;
+/*Product page*/
+.product-banner{
+  position: relative;
+  height: 20vh;
+  padding-top:1% ;
 }
-.running-icon{
-  grid-area: running;
+.product-banner-img{
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+	object-position: 10% 25%;
+	margin: 0;
 }
-.biking-icon{
-  grid-area: biking;
-}
-
-
-footer{
-  background-color:rgba(10, 54, 65, 1) ;
-}
-@media (min-width: 344px) and (max-width:430px){
-}
+.product-banner-text{
+  color: white;
+  position: absolute;
+	inset: 0;
+	padding: 1rem;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  }
+  .all-jackets{
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .all-jackets img{
+    max-width: 30vw;
+    height: auto;
+  }
+  .jacket-one, .jacket-two, .jacket-three, .jacket-four, .jacket-five, .jacket-six, .jacket-seven{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px;
+  }
+  .jacket-one h3, .jacket-two h3, .jacket-three h3, .jacket-four h3, .jacket-five h3, .jacket-six h3, .jacket-seven h3{
+    margin-top: 0%;
+    margin-bottom: 50%;
+    color: rgba(10, 54, 65, 1);}
+  
+  .jacket-one img, .jacket-two img, .jacket-three img, .jacket-four img, .jacket-five img, .jacket-six img, .jacket-seven img{
+    margin-top: 20%;
+  }
+  .jacket-one h2 a, .jacket-two h2 a, .jacket-three h2 a, .jacket-four h2 a, .jacket-five h2 a, .jacket-six h2 a, .jacket-seven h2 a{
+    text-decoration: none;
+    color: rgba(10, 54, 65, 1);}
+  /*Specific*/
+  .specific-container{
+    display: flex;
+  }
+  .specific-image{
+    width: 50%;
+    height: auto;
+  }
