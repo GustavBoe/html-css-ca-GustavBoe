@@ -212,8 +212,16 @@ footer p, footer a{
     align-items: center;
     margin: 10%;
   }
+ 
   .specific-icon-container i{
-    font-size: 2em;
+    font-size: 36px;
+  }
+  .specific-hiking-icon i{
+    font-size: 40px;
+  }
+  .specific-description{
+    font-family: Brygada1918;
+    padding: 5%;
   }
 
   
