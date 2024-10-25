@@ -190,9 +190,30 @@ footer p, footer a{
     color: rgba(10, 54, 65, 1);}
   /*Specific*/
   .specific-container{
+    margin-top: 10%;
+    margin-bottom: 30%;
     display: flex;
+    flex-direction: column;
+    align-items: center; 
   }
   .specific-image{
     width: 50%;
     height: auto;
   }
+  .specific-icon-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .specific-hiking-icon, .specific-rain-icon, .specific-wind-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
+  .specific-icon-container i{
+    font-size: 2em;
+  }
+
+  
