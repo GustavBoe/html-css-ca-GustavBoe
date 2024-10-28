@@ -51,9 +51,36 @@
       </nav>
     </header>
     <main>
+      <h1 class="checkout-heading">Checkout</h1>
       <section class="checkout-container">
-        <h1 class="checkout-heading">Checkout</h1>
-        <section class="checkout-forms-container"></section>
+        <section class="checkout-forms-container">
+          <form>
+            <label for="card-number"
+              ><i class="fa-regular fa-credit-card"></i
+            ></label>
+            <input
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              id="card-number"
+              name="card-number"
+              autocomplete="cc-number"
+              maxlength="19"
+              placeholder="Card number"
+              required
+            />
+            <label for="card-name"><i class="fa-regular fa-user"></i>:</label>
+            <input
+              type="text"
+              id="card-name"
+              name="card-name"
+              inputmode="latin"
+              autocomplete="cc-name"
+              placeholder="Cardholders name"
+              required
+            />
+          </form>
+        </section>
       </section>
     </main>
     <footer>

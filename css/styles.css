@@ -273,4 +273,19 @@ footer p, footer a{
   height: 2em;
 }
 /*Checkout*/
+.checkout-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.checkout-container{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(10, 54, 65, 1);
+}
+
   
