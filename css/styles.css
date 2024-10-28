@@ -223,5 +223,20 @@ footer p, footer a{
     font-family: Brygada1918;
     padding: 5%;
   }
+  .specific-cart-button{
+    font-family: Bebas Neue;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(10, 54, 65, 1);
+    border: none;
+    width: 8em;
+    height: 3em;
+    margin-top: 5em;
+    margin-bottom: 3em;
+  }
+  .specific-cart-button:hover{
+    background-color: rgb(1, 173, 99);
+    cursor: pointer;
+  }
 
   
