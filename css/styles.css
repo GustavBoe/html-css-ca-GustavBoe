@@ -223,7 +223,7 @@ footer p, footer a{
     font-family: Brygada1918;
     padding: 5%;
   }
-  .specific-cart-button{
+  .specific-cart-button, .cart-buy-button, .cart-continue-button{
     font-family: Bebas Neue;
     font-size: 24px;
     color: white;
@@ -244,7 +244,32 @@ footer p, footer a{
   }
   /*Cart*/
  .cart-container{
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  }
-
+ .cart-heading{
+  font-size: 2em;
+  margin-bottom: 1em;
+ }
+ .cart-image{
+  width: 30%;
+  height: auto;
+  margin-bottom: 4em;
+ }
+ .cart-jacket-text,{
+  font-size: 18px;
+ }
+.cart-total{
+  font-size: 22px;
+}
+.cart-buy-button{
+  margin-top: 3em;
+}
+.cart-continue-button{
+  font-size: 16px;
+  color: rgba(10, 54, 65, 1);
+  background-color: white;
+  height: 2em;
+}
   
