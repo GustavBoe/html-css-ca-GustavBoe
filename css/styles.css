@@ -212,7 +212,6 @@ footer p, footer a{
     align-items: center;
     margin: 10%;
   }
- 
   .specific-icon-container i{
     font-size: 36px;
   }
@@ -231,12 +230,18 @@ footer p, footer a{
     border: none;
     width: 8em;
     height: 3em;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 3em;
   }
   .specific-cart-button:hover{
-    background-color: rgb(1, 173, 99);
+    background-color:white;
+    color: rgba(10, 54, 65, 1);
+    border-color: rgba(10, 54, 65, 1);
+    border-style: solid;
+    border-width: 5px;
     cursor: pointer;
   }
+  /*Cart*/
+  
 
   
