@@ -17,6 +17,7 @@ header{
   border-bottom-style:solid;
   border-color:white ;
   font-weight: bold;
+  padding-bottom: 5px;
 }
 .navbar{ 
   display: flex;
@@ -242,6 +243,6 @@ footer p, footer a{
     cursor: pointer;
   }
   /*Cart*/
-  
+ 
 
   
