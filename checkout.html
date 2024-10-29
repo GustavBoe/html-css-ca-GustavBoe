@@ -81,16 +81,6 @@
           <div class="cvc-exp-container">
             <input
               type="number"
-              pattern="[0-9s]{3}"
-              id="card-cvc"
-              name="card-cvc"
-              autocomplete="cc-csc"
-              maxlength="3"
-              placeholder="CvC"
-              required
-            />
-            <input
-              type="number"
               pattern="[0-9s]{2}"
               id="card-exp-m"
               name="card-exp-m"
@@ -107,6 +97,16 @@
               autocomplete="cc-exp-year"
               maxlength="2"
               placeholder="yy"
+              required
+            />
+            <input
+              type="number"
+              pattern="[0-9s]{3}"
+              id="card-cvc"
+              name="card-cvc"
+              autocomplete="cc-csc"
+              maxlength="3"
+              placeholder="CvC"
               required
             />
           </div>
