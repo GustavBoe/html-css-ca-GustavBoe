@@ -280,7 +280,7 @@ footer p, footer a{
 
 }
 .checkout-container{
-  padding: 1em 3em 5em 3em ;
+  height: fit-content;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
@@ -289,9 +289,10 @@ footer p, footer a{
   background-color: rgba(10, 54, 65, 1);
 }
 .checkout-forms{
-  height: 10em;
+  height: 90%;
+  width:max-content;
   margin:3em;
-  margin-top: 0%;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -304,5 +305,7 @@ footer p, footer a{
   width: 3em;
   margin-top: 1em;
   text-align: center;}
+.checkout-forms input[type="email"]{
+  min-width: 14em;}
 
   
