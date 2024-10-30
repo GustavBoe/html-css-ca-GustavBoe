@@ -64,7 +64,7 @@ footer p, footer a{
   color: white;
   font-size: 3vh;
 }
-/* Index page*/
+/* Index*/
 .index-banner{
   position: relative;
   height: 40vh;
@@ -139,7 +139,7 @@ footer p, footer a{
 .running-icon i, .biking-icon i{
   padding-top:50px;
 }
-/*Product page*/
+/*Products*/
 .product-banner{
   position: relative;
   height: 20vh;
@@ -342,7 +342,41 @@ footer p, footer a{
   font-family: Brygada1918;
   font-size: 100%;
 }
-
+/*Checkout-success*/
+.checkout-success-receipt{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-top: 10%;
+}
+.checkout-success-check-icon{
+  margin: 0%;
+  font-size: 2em;
+}
+.checkout-success-receipt img{
+  width: 10%;
+  height: auto;
+  margin: 0%;
+}
+.checkout-success-receipt p{
+  font-family: Brygada1918;
+}
+.checkout-success-receipt button{
+  height: 3em;
+  margin: 30% 0% 30% 0%;
+  color: white;
+  background-color: rgba(10, 54, 65, 1);
+  font-family: Bebas Neue;
+  font-size: 150%;
+  border: none;
+}
+.checkout-success-receipt button:hover{
+  color: rgba(10, 54, 65, 1);
+  background-color: white;
+  cursor: pointer;
+}
 
 
 
