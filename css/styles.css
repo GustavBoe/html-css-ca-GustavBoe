@@ -386,21 +386,52 @@ footer p, footer a{
 .contact-forms{
   height: fit-content;
   margin-top: 1em;
+  margin-bottom: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 input[type="text"]{
-  margin-top: 1em;
+  margin: 1em 0em 0em 0em;
 min-width: 90%;
 }
 .contact-forms i{
   margin: 10% 0% 10% 0%;
 }
+.submit-button{
+  margin-top: 20%;
+  color: rgba(10, 54, 65, 1);
+  background-color: white;
+  border: none;
+  font-size: 2rem;
+  font-family: Bebas Neue;
+}
 .contact-border{
   border: solid rgba(10, 54, 65, 1) 3px;
+  margin-top: 3%;
+  width: 70%;
 }
+.contact-info{
+  height: fit-content;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-info h2{
+  font-size: 80%;
+}
+.contact-location h2{
+  font-size:80%;
+}
+.contact-phone, .contact-fax, .contact-location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 5% 0% 5%;
+}
+
 
 
 
