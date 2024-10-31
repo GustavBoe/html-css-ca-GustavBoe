@@ -286,8 +286,7 @@ footer p, footer a{
   flex-direction: column;
   align-items: center;
   color: white;
-  background-color: rgba(10, 54, 65, 1);
-  
+  background-color: rgba(10, 54, 65, 1); 
 }
 .checkout-forms{
   height: 90%;
@@ -381,8 +380,28 @@ footer p, footer a{
 .contact-container{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
+.contact-forms{
+  height: fit-content;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"]{
+  margin-top: 1em;
+min-width: 90%;
+}
+.contact-forms i{
+  margin: 10% 0% 10% 0%;
+}
+.contact-border{
+  border: solid rgba(10, 54, 65, 1) 3px;
+}
+
 
 
   
