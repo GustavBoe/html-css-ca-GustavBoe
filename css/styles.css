@@ -393,7 +393,7 @@ footer p, footer a{
 }
 input[type="text"]{
   margin: 1em 0em 0em 0em;
-min-width: 90%;
+  min-width: 90%;
 }
 .contact-forms i{
   margin: 10% 0% 10% 0%;
@@ -431,8 +431,23 @@ min-width: 90%;
   justify-content: space-between;
   padding: 0% 5% 0% 5%;
 }
-
-
+/*About*/
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+.about-container p{
+  align-self: flex-start;
+  font-family: Brygada1918;
+  padding-left: 5%;
+  width: 95%;
+}
+.about-container img{
+  width:95%;
+  height: auto;
+}
 
 
   
