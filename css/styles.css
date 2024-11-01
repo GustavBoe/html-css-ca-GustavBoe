@@ -301,7 +301,7 @@ footer p, footer a{
 .checkout-forms i{
   margin: 1em 1em 0em 0em ;
 }
-.checkout-forms input[type="number"]{
+.checkout-forms input[type="year"]{
   width: 3em;
   margin-top: 1em;
   text-align: center;
@@ -453,6 +453,109 @@ input[type="text"]{
   width:95%;
   height: auto;
 }
-
-
+/*Media queries*/
+@media screen and (min-width: 481px){
+  /*All*/
+  .navbar a{
+    font-size: 130%;  
+  }
+  footer p, footer a{
+    font-size: 4vh;
+  }
+  /*Index*/
+  .index-icon-container i{
+      font-size: 4em;
+    }
+  
+  /*Products*/
+  .product-banner-text{
+      font-size: 4vh;
+    }
+  .all-jackets{
+      padding-top: 10%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
+  .all-jackets img{
+      max-width: 20vw;
+      height: auto;
+      margin: 0% 5% 0% 0%;
+    }
+  .jacket-five, .jacket-six, .jacket-seven{
+      text-align: center;
+    }
+  /*Specific*/
+  .specific-model{
+    font-size: 42px;
+  }
+  .specific-price{
+    font-size: 36px;
+  }
+  .specific-description{
+    font-size: 150%;
+    padding-left: 8%;
+  }
+  .specific-hiking-icon, .specific-rain-icon, .specific-wind-icon{
+    margin: 20%;
+  }
+  .specific-icon-container i{
+    font-size: 40px;
+  }
+  .specific-hiking-icon i{
+    font-size: 44px;
+  }
+  .specific-cart-button, .cart-buy-button, .cart-continue-button{
+    font-size: 32px;
+    width: 9em;
+    height: 3em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  /*Contact*/
+  .contact-forms{
+    height: fit-content;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  textarea {
+  width: 80%;
+  height: 100px;
+  }
+  .contact-forms i{
+    margin: 10% 0% 10% 0%;
+  }
+  .submit-button{
+    margin-top: 10%;
+    font-size: 2rem;
+    font-family: Bebas Neue;
+  }
+  .contact-border{
+    border: solid rgba(10, 54, 65, 1) 3px;
+    margin-top: 3%;
+    width: 70%;
+  }
+  .contact-info{
+    height: 150px;
+    justify-content: center;
+  }
+  .contact-info h2, .contact-location h2{
+    font-size: 20px;
+  }
+  .contact-phone, .contact-fax, .contact-location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 7% 0% 7%;
+  }
+  /*About*/
+  .about-container h1{
+    font-size: 40px;
+  }
+}
   
