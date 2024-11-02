@@ -402,9 +402,9 @@ input[type="text"]{
 .contact-forms i{
   margin: 10% 0% 10% 0%;
 }
-textarea {
+textarea{
   width: 80%;
-  height: 100px;
+  height: 110px;
 }
 .submit-button{
   margin-top: 20%;
