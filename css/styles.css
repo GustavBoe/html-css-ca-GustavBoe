@@ -89,7 +89,10 @@ footer p, footer a{
 .index-banner-text a{
   text-decoration: none;
   color: white;
-  font-size: 12vh;
+  font-size: 6vh;
+}
+.index-banner-text h1{
+  font-weight: 100;
 }
 .wrapper{
   display: flex;
