@@ -405,7 +405,7 @@ input[type="text"]{
 .contact-forms i{
   margin: 10% 0% 10% 0%;
 }
-textarea{
+textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_form_textarea*/
   width: 80%;
   height: 110px;
 }
@@ -478,7 +478,7 @@ textarea{
   .product-banner-text{
       font-size: 4vh;
     }
-  .all-jackets{
+  .all-jackets{/*Code borrowed from the user Shanomurphy from https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row*/
       padding-top: 10%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
