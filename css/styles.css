@@ -4,124 +4,128 @@
 /* These are marked with an underscore: */
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
-html, body{
+html,
+body {
   height: 100%;
   font-family: Bebas Neue;
   color: rgba(10, 54, 65, 1);
 }
-header{
-  background-color:rgba(10, 54, 65, 1) ;
-
+header {
+  background-color: rgba(10, 54, 65, 1);
 }
-.active{
-  border-bottom-style:solid;
-  border-color:white ;
+.active {
+  border-bottom-style: solid;
+  border-color: white;
   font-weight: bold;
   padding-bottom: 5px;
 }
-.navbar{ 
+.navbar {
   display: flex;
   justify-content: space-evenly;
-  text-align: justify; 
+  text-align: justify;
 }
-.navbar ul{
+.navbar ul {
   padding: 0%;
 }
-.navbar li{
-  display: inline-block;  
+.navbar li {
+  display: inline-block;
 }
-.navbar a{
+.navbar a {
   margin: 3vw;
   color: white;
   text-decoration: none;
   font-size: 100%;
-  
 }
-.nav-logo img{
+.nav-logo img {
   width: 20vw;
   height: auto;
   background-color: rgba(10, 54, 65, 1);
 }
-footer{
-  background-color:rgba(10, 54, 65, 1) ;
+footer {
+  background-color: rgba(10, 54, 65, 1);
   height: 40%;
   margin-top: 10%;
   padding: 10%;
   display: grid;
   grid-gap: 5%;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 60% 70%;
   align-items: center;
   align-content: center;
 }
 
-footer p, footer a{
+footer p,
+footer a {
   display: inline-block;
   margin: 0%;
-  padding-top:1em;
+  padding-top: 1em;
   margin-bottom: 1em;
   text-decoration: none;
   color: white;
   font-size: 3vh;
 }
 /* Index*/
-.index-banner{
+.index-banner {
   position: relative;
   height: 40vh;
-  padding-top:1% ;
+  padding-top: 1%;
 }
-.index-banner-img{
+.index-banner-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-	object-position: center;
-	margin: 0;
+  object-position: center;
+  margin: 0;
 }
-.index-banner-text{
+.index-banner-text {
   position: absolute;
-	inset: 0;
-	padding: 1rem;
+  inset: 0;
+  padding: 1rem;
   display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.index-banner-text a{
+.index-banner-text a {
   text-decoration: none;
   color: white;
   font-size: 6vh;
 }
-.index-banner-text h1{
+.index-banner-text h1 {
   font-weight: 100;
 }
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: row;
   margin-bottom: 10%;
 }
-.shop-men, .shop-women {
+.shop-men,
+.shop-women {
   flex: 1;
-  width:50vw;
-  height:auto;
+  width: 50vw;
+  height: auto;
   position: relative;
   padding: 1%;
 }
-.shop-men-image, .shop-women-image{
+.shop-men-image,
+.shop-women-image {
   width: 100%;
   height: auto;
   object-fit: cover;
-	object-position: center;
-	margin: 0;
+  object-position: center;
+  margin: 0;
 }
-.shop-men-text, .shop-women-text{	
+.shop-men-text,
+.shop-women-text {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  }
-.shop-men-text a, .shop-women-text a{
+}
+.shop-men-text a,
+.shop-women-text a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 7vh;
@@ -129,195 +133,225 @@ footer p, footer a{
 .index-icon-container {
   padding: 10%;
   display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 100% 100%;
   justify-items: center;
   align-items: center;
   align-content: center;
 }
-.index-icon-container i{
+.index-icon-container i {
   font-size: 3em;
-  color: rgba(10, 54, 65, 1); 
+  color: rgba(10, 54, 65, 1);
 }
-.running-icon i, .biking-icon i{
-  padding-top:50px;
+.running-icon i,
+.biking-icon i {
+  padding-top: 50px;
 }
 /*Products*/
-.product-banner{
+.product-banner {
   position: relative;
   height: 20vh;
-  padding-top:1% ;
+  padding-top: 1%;
 }
-.product-banner-img{
+.product-banner-img {
   width: 100%;
   height: 20vh;
   object-fit: cover;
-	object-position: 10% 25%;
-	margin: 0;
+  object-position: 10% 25%;
+  margin: 0;
 }
-.product-banner-text{
+.product-banner-text {
   color: white;
   position: absolute;
-	inset: 0;
-	padding: 1rem;
+  inset: 0;
+  padding: 1rem;
   display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-  }
-  .all-jackets{
-    padding-top: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .all-jackets img{
-    max-width: 30vw;
-    height: auto;
-  }
-  .jacket-one, .jacket-two, .jacket-three, .jacket-four, .jacket-five, .jacket-six, .jacket-seven{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px;
-  }
-  .jacket-one h3, .jacket-two h3, .jacket-three h3, .jacket-four h3, .jacket-five h3, .jacket-six h3, .jacket-seven h3{
-    margin-top: 0%;
-    margin-bottom: 50%;
-    color: rgba(10, 54, 65, 1);}
-  
-  .jacket-one img, .jacket-two img, .jacket-three img, .jacket-four img, .jacket-five img, .jacket-six img, .jacket-seven img{
-    margin-top: 20%;
-  }
-  .jacket-one h2 a, .jacket-two h2 a, .jacket-three h2 a, .jacket-four h2 a, .jacket-five h2 a, .jacket-six h2 a, .jacket-seven h2 a{
-    text-decoration: none;
-    color: rgba(10, 54, 65, 1);}
-  /*Specific*/
-  .specific-container{
-    margin-top: 10%;
-    margin-bottom: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  }
-  .specific-image{
-    width: 50%;
-    height: auto;
-  }
-  .specific-icon-container{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .specific-hiking-icon, .specific-rain-icon, .specific-wind-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10%;
-  }
-  .specific-icon-container i{
-    font-size: 36px;
-  }
-  .specific-hiking-icon i{
-    font-size: 40px;
-  }
-  .specific-description{
-    font-family: Brygada1918;
-    padding: 5%;
-  }
-  .specific-cart-button, .cart-buy-button, .cart-continue-button{
-    font-family: Bebas Neue;
-    font-size: 24px;
-    color: white;
-    background-color: rgba(10, 54, 65, 1);
-    border: none;
-    width: 8em;
-    height: 3em;
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
-  .specific-cart-button:hover{
-    background-color:white;
-    color: rgba(10, 54, 65, 1);
-    border-color: rgba(10, 54, 65, 1);
-    border-style: solid;
-    border-width: 5px;
-    cursor: pointer;
-  }
-  /*Cart*/
- .cart-container{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.all-jackets {
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
- }
- .cart-heading{
+}
+.all-jackets img {
+  max-width: 30vw;
+  height: auto;
+}
+.jacket-one,
+.jacket-two,
+.jacket-three,
+.jacket-four,
+.jacket-five,
+.jacket-six,
+.jacket-seven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px;
+}
+.jacket-one h3,
+.jacket-two h3,
+.jacket-three h3,
+.jacket-four h3,
+.jacket-five h3,
+.jacket-six h3,
+.jacket-seven h3 {
+  margin-top: 0%;
+  margin-bottom: 50%;
+  color: rgba(10, 54, 65, 1);
+}
+
+.jacket-one img,
+.jacket-two img,
+.jacket-three img,
+.jacket-four img,
+.jacket-five img,
+.jacket-six img,
+.jacket-seven img {
+  margin-top: 20%;
+}
+.jacket-one h2 a,
+.jacket-two h2 a,
+.jacket-three h2 a,
+.jacket-four h2 a,
+.jacket-five h2 a,
+.jacket-six h2 a,
+.jacket-seven h2 a {
+  text-decoration: none;
+  color: rgba(10, 54, 65, 1);
+}
+/*Specific*/
+.specific-container {
+  margin-top: 10%;
+  margin-bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.specific-image {
+  width: 50%;
+  height: auto;
+}
+.specific-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.specific-hiking-icon,
+.specific-rain-icon,
+.specific-wind-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10%;
+}
+.specific-icon-container i {
+  font-size: 36px;
+}
+.specific-hiking-icon i {
+  font-size: 40px;
+}
+.specific-description {
+  font-family: Brygada1918;
+  padding: 5%;
+}
+.specific-cart-button,
+.cart-buy-button,
+.cart-continue-button {
+  font-family: Bebas Neue;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(10, 54, 65, 1);
+  border: none;
+  width: 8em;
+  height: 3em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.specific-cart-button:hover {
+  background-color: white;
+  color: rgba(10, 54, 65, 1);
+  border-color: rgba(10, 54, 65, 1);
+  border-style: solid;
+  border-width: 5px;
+  cursor: pointer;
+}
+/*Cart*/
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-heading {
   font-size: 2em;
   margin-bottom: 1em;
- }
- .cart-image{
+}
+.cart-image {
   width: 30%;
   height: auto;
   margin-bottom: 4em;
- }
- .cart-jacket-text{
+}
+.cart-jacket-text {
   font-size: 18px;
- }
-.cart-total{
+}
+.cart-total {
   font-size: 22px;
 }
-.cart-buy-button{
+.cart-buy-button {
   margin-top: 3em;
 }
-.cart-continue-button{
+.cart-continue-button {
   font-size: 16px;
   color: rgba(10, 54, 65, 1);
   background-color: white;
   height: 2em;
 }
 /*Checkout*/
-.checkout-heading{
+.checkout-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-.checkout-container{
+.checkout-container {
   height: fit-content;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  background-color: rgba(10, 54, 65, 1); 
+  background-color: rgba(10, 54, 65, 1);
 }
-.checkout-forms{
+.checkout-forms {
   height: 90%;
-  width:max-content;
-  margin:3em;
+  width: 80%;
+  margin: 3em;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
 }
-.checkout-forms i{
-  margin: 1em 1em 0em 0em ;
+.checkout-forms i {
+  margin: 1em 1em 0em 0em;
 }
-.checkout-forms input[type="year"]{
+.checkout-forms input[type="year"] {
   width: 3em;
   margin-top: 1em;
   text-align: center;
 }
-.checkout-forms input[type="tel"]{
+.checkout-forms input[type="tel"] {
   width: 3em;
   margin-top: 1em;
   text-align: center;
 }
-.checkout-forms input[type="email"]{
+.checkout-forms input[type="email"] {
   min-width: 100%;
 }
-.purchase-button{
+.purchase-button {
   margin-top: 20%;
   color: rgba(10, 54, 65, 1);
   background-color: white;
@@ -326,22 +360,21 @@ footer p, footer a{
   font-family: Bebas Neue;
   align-self: flex-end;
 }
-.purchase-button:hover{
+.purchase-button:hover {
   border: solid white 1px;
   color: white;
   background-color: rgba(10, 54, 65, 1);
   cursor: pointer;
-
 }
-.purchase-button:active{
+.purchase-button:active {
   color: white;
   background-color: rgba(10, 54, 65, 1);
 }
-.summary-container img{
+.summary-container img {
   width: 30%;
-  height: auto; 
+  height: auto;
 }
-.summary-container{
+.summary-container {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
@@ -350,7 +383,7 @@ footer p, footer a{
   font-size: 100%;
 }
 /*Checkout-success*/
-.checkout-success-receipt{
+.checkout-success-receipt {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -358,19 +391,19 @@ footer p, footer a{
   width: 100%;
   margin-top: 10%;
 }
-.checkout-success-check-icon{
+.checkout-success-check-icon {
   margin: 0%;
   font-size: 2em;
 }
-.checkout-success-receipt img{
+.checkout-success-receipt img {
   width: 10%;
   height: auto;
   margin: 0%;
 }
-.checkout-success-receipt p{
+.checkout-success-receipt p {
   font-family: Brygada1918;
 }
-.checkout-success-receipt button{
+.checkout-success-receipt button {
   height: 3em;
   margin: 30% 0% 30% 0%;
   color: white;
@@ -379,37 +412,38 @@ footer p, footer a{
   font-size: 150%;
   border: none;
 }
-.checkout-success-receipt button:hover{
+.checkout-success-receipt button:hover {
   color: rgba(10, 54, 65, 1);
   background-color: white;
   cursor: pointer;
 }
 /*Contact*/
-.contact-container{
+.contact-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
-.contact-forms{
+.contact-forms {
   margin-top: 1em;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-input[type="text"]{
+input[type="text"] {
   margin: 1em 0em 0em 0em;
   min-width: 90%;
 }
-.contact-forms i{
+.contact-forms i {
   margin: 10% 0% 10% 0%;
 }
-textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_form_textarea*/
+textarea {
+  /*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_form_textarea*/
   width: 80%;
   height: 110px;
 }
-.submit-button{
+.submit-button {
   margin-top: 20%;
   color: rgba(10, 54, 65, 1);
   background-color: white;
@@ -417,23 +451,26 @@ textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp
   font-size: 2rem;
   font-family: Bebas Neue;
 }
-.contact-border{
+.contact-border {
   border: solid rgba(10, 54, 65, 1) 3px;
   margin-top: 3%;
   width: 70%;
 }
-.contact-info{
+.contact-info {
   height: fit-content;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contact-info h2, .contact-location h2{
+.contact-info h2,
+.contact-location h2 {
   font-size: 80%;
   text-decoration: none;
 }
-.contact-phone, .contact-fax, .contact-location{
+.contact-phone,
+.contact-fax,
+.contact-location {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -441,79 +478,88 @@ textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp
   padding: 0% 5% 0% 5%;
 }
 /*About*/
-.about-container{
+.about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
 }
-.about-container p{
+.about-container p {
   align-self: flex-start;
   font-family: Brygada1918;
   padding-left: 5%;
   width: 95%;
 }
-.about-container img{
-  width:95%;
+.about-container img {
+  width: 95%;
   height: auto;
 }
 /*Media queries*/
-@media(min-width: 481px) and (max-width:768px){
+@media (min-width: 481px) and (max-width: 768px) {
   /*All*/
-  .navbar a{
-    font-size: 130%;  
+  .navbar a {
+    font-size: 130%;
   }
-  footer p, footer a{
+  footer p,
+  footer a {
     font-size: 4vh;
   }
-  .footer-about, .footer-slogan{
+  .footer-about,
+  .footer-slogan {
     margin-bottom: 15%;
     padding-bottom: 5%;
   }
   /*Index*/
-  .index-icon-container i{
-      font-size: 4em;
-    }
+  .index-icon-container i {
+    font-size: 4em;
+  }
   /*Products*/
-  .product-banner-text{
-      font-size: 4vh;
-    }
-  .all-jackets{/*Code borrowed from the user Shanomurphy from https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row*/
-      padding-top: 10%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-    }
-  .all-jackets img{
-      max-width: 20vw;
-      height: auto;
-      margin: 0% 5% 0% 0%;
-    }
-  .jacket-five, .jacket-six, .jacket-seven{
-      text-align: center;
-    }
+  .product-banner-text {
+    font-size: 4vh;
+  }
+  .all-jackets {
+    /*Code borrowed from the user Shanomurphy from https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row*/
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .all-jackets img {
+    max-width: 20vw;
+    height: auto;
+    margin: 0% 5% 0% 0%;
+  }
+  .jacket-five,
+  .jacket-six,
+  .jacket-seven {
+    text-align: center;
+  }
   /*Specific*/
-  .specific-model{
+  .specific-model {
     font-size: 42px;
   }
-  .specific-price{
+  .specific-price {
     font-size: 36px;
   }
-  .specific-description{
+  .specific-description {
     font-size: 150%;
     padding-left: 8%;
   }
-  .specific-hiking-icon, .specific-rain-icon, .specific-wind-icon{
+  .specific-hiking-icon,
+  .specific-rain-icon,
+  .specific-wind-icon {
     margin: 20%;
   }
-  .specific-icon-container i{
+  .specific-icon-container i {
     font-size: 40px;
   }
-  .specific-hiking-icon i{
+  .specific-hiking-icon i {
     font-size: 44px;
   }
-  .specific-cart-button, .cart-buy-button, .cart-continue-button{
+  .specific-cart-button,
+  .cart-buy-button,
+  .cart-continue-button {
     font-size: 32px;
     width: 9em;
     height: 3em;
@@ -521,7 +567,7 @@ textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp
     margin-bottom: 2em;
   }
   /*Contact*/
-  .contact-forms{
+  .contact-forms {
     height: fit-content;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -530,30 +576,33 @@ textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp
     align-items: center;
   }
   textarea {
-  width: 80%;
-  height: 100px;
+    width: 80%;
+    height: 100px;
   }
-  .contact-forms i{
+  .contact-forms i {
     margin: 10% 0% 10% 0%;
   }
-  .submit-button{
+  .submit-button {
     margin-top: 10%;
     font-size: 2rem;
     font-family: Bebas Neue;
   }
-  .contact-border{
+  .contact-border {
     border: solid rgba(10, 54, 65, 1) 3px;
     margin-top: 3%;
     width: 70%;
   }
-  .contact-info{
+  .contact-info {
     height: 150px;
     justify-content: center;
   }
-  .contact-info h2, .contact-location h2{
+  .contact-info h2,
+  .contact-location h2 {
     font-size: 20px;
   }
-  .contact-phone, .contact-fax, .contact-location{
+  .contact-phone,
+  .contact-fax,
+  .contact-location {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -561,66 +610,86 @@ textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp
     padding: 0% 7% 0% 7%;
   }
   /*About*/
-  .about-container h1{
+  .about-container h1 {
     font-size: 40px;
   }
 }
-@media (min-width: 769px) and (max-width:1279px) {
+@media (min-width: 769px) and (max-width: 1279px) {
   /*All*/
-  .navbar a{
-    font-size: 180%;  
+  .navbar a {
+    font-size: 180%;
   }
-  footer{
+  footer {
     height: 50%;
   }
-  .footer-about, .footer-slogan{
+  .footer-about,
+  .footer-slogan {
     margin-bottom: 15%;
     padding-bottom: 5%;
   }
   /*Index*/
-  .index-icon-container i{
-      font-size: 5em;
-    }
+  .index-icon-container i {
+    font-size: 5em;
+  }
   /*Products*/
-  .product-banner-text{
-      font-size: 4vh;
-    }
-  .all-jackets{
-      padding-top: 5%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-    }
-    .jacket-one h3, .jacket-two h3, .jacket-three h3, .jacket-four h3, .jacket-five h3, .jacket-six h3, .jacket-seven h3{
-     margin-bottom: 15%;}
-    .jacket-one img, .jacket-two img, .jacket-three img, .jacket-four img, .jacket-five img, .jacket-six img, .jacket-seven img{
-      margin-top: 20%;
-    }
-  .jacket-five, .jacket-six, .jacket-seven{
-      text-align: center;
-    }
+  .product-banner-text {
+    font-size: 4vh;
+  }
+  .all-jackets {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .jacket-one h3,
+  .jacket-two h3,
+  .jacket-three h3,
+  .jacket-four h3,
+  .jacket-five h3,
+  .jacket-six h3,
+  .jacket-seven h3 {
+    margin-bottom: 15%;
+  }
+  .jacket-one img,
+  .jacket-two img,
+  .jacket-three img,
+  .jacket-four img,
+  .jacket-five img,
+  .jacket-six img,
+  .jacket-seven img {
+    margin-top: 20%;
+  }
+  .jacket-five,
+  .jacket-six,
+  .jacket-seven {
+    text-align: center;
+  }
   /*Specific*/
-  .specific-model{
+  .specific-model {
     font-size: 42px;
   }
-  .specific-price{
+  .specific-price {
     font-size: 36px;
   }
-  .specific-description{
+  .specific-description {
     font-size: 150%;
     padding-left: 8%;
   }
-  .specific-hiking-icon, .specific-rain-icon, .specific-wind-icon{
+  .specific-hiking-icon,
+  .specific-rain-icon,
+  .specific-wind-icon {
     margin: 40%;
   }
-  .specific-icon-container i{
+  .specific-icon-container i {
     font-size: 45px;
   }
-  .specific-hiking-icon i{
+  .specific-hiking-icon i {
     font-size: 49px;
   }
-  .specific-cart-button, .cart-buy-button, .cart-continue-button{
+  .specific-cart-button,
+  .cart-buy-button,
+  .cart-continue-button {
     font-size: 32px;
     width: 9em;
     height: 3em;
@@ -628,28 +697,28 @@ textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp
     margin-bottom: 2em;
   }
   /*Cart*/
-   .cart-heading{
+  .cart-heading {
     font-size: 3em;
-   }
-   .cart-image{
+  }
+  .cart-image {
     width: 30%;
     height: auto;
     margin-bottom: 4em;
-   }
-   .cart-jacket-text{
+  }
+  .cart-jacket-text {
     font-size: 36px;
-   }
-  .cart-total{
+  }
+  .cart-total {
     font-size: 22px;
   }
-  .cart-buy-button{
+  .cart-buy-button {
     margin-top: 3em;
   }
-  .cart-continue-button{
+  .cart-continue-button {
     font-size: 14px;
   }
   /*Contact*/
-  .contact-forms{
+  .contact-forms {
     height: fit-content;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -658,30 +727,33 @@ textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp
     align-items: center;
   }
   textarea {
-  width: 80%;
-  height: 100px;
+    width: 80%;
+    height: 100px;
   }
-  .contact-forms i{
+  .contact-forms i {
     margin: 10% 0% 10% 0%;
   }
-  .submit-button{
+  .submit-button {
     margin-top: 10%;
     font-size: 2rem;
     font-family: Bebas Neue;
   }
-  .contact-border{
+  .contact-border {
     border: solid rgba(10, 54, 65, 1) 3px;
     margin-top: 3%;
     width: 70%;
   }
-  .contact-info{
+  .contact-info {
     height: 150px;
     justify-content: center;
   }
-  .contact-info h2, .contact-location h2{
+  .contact-info h2,
+  .contact-location h2 {
     font-size: 20px;
   }
-  .contact-phone, .contact-fax, .contact-location{
+  .contact-phone,
+  .contact-fax,
+  .contact-location {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -689,141 +761,164 @@ textarea{/*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp
     padding: 0% 7% 0% 7%;
   }
   /*About*/
-  .about-container h1{
+  .about-container h1 {
     font-size: 40px;
   }
 }
-@media (min-width:1280px){
-    /*All*/
-    .navbar a{
-      font-size: 180%;  
-    }
-    footer{
-      height: 50%;
-    }
-    .footer-about, .footer-slogan{
-      margin-bottom: 15%;
-      padding-bottom: 5%;
-    }
-    /*Index*/
-    .index-icon-container i{
-        font-size: 5em;
-      }
-    /*Products*/
-    .product-banner-text{
-        font-size: 4vh;
-      }
-    .all-jackets{
-        padding-top: 5%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-      }
-      .jacket-one h3, .jacket-two h3, .jacket-three h3, .jacket-four h3, .jacket-five h3, .jacket-six h3, .jacket-seven h3{
-       margin-bottom: 15%;}
-      .jacket-one img, .jacket-two img, .jacket-three img, .jacket-four img, .jacket-five img, .jacket-six img, .jacket-seven img{
-        margin-top: 20%;
-      }
-    .jacket-five, .jacket-six, .jacket-seven{
-        text-align: center;
-      }
-    /*Specific*/
-    .specific-model{
-      font-size: 42px;
-    }
-    .specific-price{
-      font-size: 36px;
-    }
-    .specific-description{
-      font-size: 150%;
-      padding-left: 8%;
-    }
-    .specific-hiking-icon, .specific-rain-icon, .specific-wind-icon{
-      margin: 40%;
-    }
-    .specific-icon-container i{
-      font-size: 45px;
-    }
-    .specific-hiking-icon i{
-      font-size: 49px;
-    }
-    .specific-cart-button, .cart-buy-button, .cart-continue-button{
-      font-size: 32px;
-      width: 9em;
-      height: 3em;
-      margin-top: 1em;
-      margin-bottom: 2em;
-    }
-    /*Cart*/
-     .cart-heading{
-      font-size: 3em;
-     }
-     .cart-image{
-      width: 30%;
-      height: auto;
-      margin-bottom: 4em;
-     }
-     .cart-jacket-text{
-      font-size: 36px;
-     }
-    .cart-total{
-      font-size: 22px;
-    }
-    .cart-buy-button{
-      margin-top: 3em;
-    }
-    .cart-continue-button{
-      font-size: 14px;
-    }
-    /*Contact*/
-    .contact-forms{
-      height: fit-content;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    textarea {
+@media (min-width: 1280px) {
+  /*All*/
+  .navbar a {
+    font-size: 180%;
+  }
+  footer {
+    height: 50%;
+  }
+  .footer-about,
+  .footer-slogan {
+    margin-bottom: 15%;
+    padding-bottom: 5%;
+  }
+  /*Index*/
+  .index-icon-container i {
+    font-size: 5em;
+  }
+  /*Products*/
+  .product-banner-text {
+    font-size: 4vh;
+  }
+  .all-jackets {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .jacket-one h3,
+  .jacket-two h3,
+  .jacket-three h3,
+  .jacket-four h3,
+  .jacket-five h3,
+  .jacket-six h3,
+  .jacket-seven h3 {
+    margin-bottom: 15%;
+  }
+  .jacket-one img,
+  .jacket-two img,
+  .jacket-three img,
+  .jacket-four img,
+  .jacket-five img,
+  .jacket-six img,
+  .jacket-seven img {
+    margin-top: 20%;
+  }
+  .jacket-five,
+  .jacket-six,
+  .jacket-seven {
+    text-align: center;
+  }
+  /*Specific*/
+  .specific-model {
+    font-size: 42px;
+  }
+  .specific-price {
+    font-size: 36px;
+  }
+  .specific-description {
+    font-size: 150%;
+    padding-left: 8%;
+  }
+  .specific-hiking-icon,
+  .specific-rain-icon,
+  .specific-wind-icon {
+    margin: 40%;
+  }
+  .specific-icon-container i {
+    font-size: 45px;
+  }
+  .specific-hiking-icon i {
+    font-size: 49px;
+  }
+  .specific-cart-button,
+  .cart-buy-button,
+  .cart-continue-button {
+    font-size: 32px;
+    width: 9em;
+    height: 3em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  /*Cart*/
+  .cart-heading {
+    font-size: 3em;
+  }
+  .cart-image {
+    width: 30%;
+    height: auto;
+    margin-bottom: 4em;
+  }
+  .cart-jacket-text {
+    font-size: 36px;
+  }
+  .cart-total {
+    font-size: 22px;
+  }
+  .cart-buy-button {
+    margin-top: 3em;
+  }
+  .cart-continue-button {
+    font-size: 14px;
+  }
+  /*Contact*/
+  .contact-forms {
+    height: fit-content;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  textarea {
     width: 80%;
     height: 100px;
-    }
-    .contact-forms i{
-      margin: 10% 0% 10% 0%;
-    }
-    .submit-button{
-      margin-top: 10%;
-      font-size: 2rem;
-      font-family: Bebas Neue;
-    }
-    .contact-border{
-      border: solid rgba(10, 54, 65, 1) 3px;
-      margin-top: 3%;
-      width: 70%;
-    }
-    .contact-info{
-      height: 150px;
-      justify-content: center;
-    }
-    .contact-info h2, .contact-location h2{
-      font-size: 20px;
-    }
-    .contact-phone, .contact-fax, .contact-location{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0% 7% 0% 7%;
-    }
-    /*About*/
-    .about-container h1{
-      font-size: 64px;
-    }
-    .about-container p{
-      font-size: 32px;
-      width: 80%;
-      height: fit-content;
-      padding-left: 10%;
-    }
+  }
+  .contact-forms i {
+    margin: 10% 0% 10% 0%;
+  }
+  .submit-button {
+    margin-top: 10%;
+    font-size: 2rem;
+    font-family: Bebas Neue;
+  }
+  .contact-border {
+    border: solid rgba(10, 54, 65, 1) 3px;
+    margin-top: 3%;
+    width: 70%;
+  }
+  .contact-info {
+    height: 150px;
+    justify-content: center;
+  }
+  .contact-info h2,
+  .contact-location h2 {
+    font-size: 20px;
+  }
+  .contact-phone,
+  .contact-fax,
+  .contact-location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 7% 0% 7%;
+  }
+  /*About*/
+  .about-container h1 {
+    font-size: 64px;
+  }
+  .about-container p {
+    font-size: 32px;
+    width: 80%;
+    height: fit-content;
+    padding-left: 10%;
+  }
 }
