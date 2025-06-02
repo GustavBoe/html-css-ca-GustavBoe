@@ -8,10 +8,10 @@ html,
 body {
   height: 100%;
   font-family: Bebas Neue;
-  color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
 }
 header {
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--dark-blue);
 }
 .active {
   border-bottom-style: solid;
@@ -39,10 +39,10 @@ header {
 .nav-logo img {
   width: 20vw;
   height: auto;
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--dark-blue);
 }
 footer {
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--dark-blue);
   height: 40%;
   margin-top: 10%;
   padding: 10%;
@@ -141,7 +141,7 @@ footer a {
 }
 .index-icon-container i {
   font-size: 3em;
-  color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
 }
 .running-icon i,
 .biking-icon i {
@@ -201,7 +201,7 @@ footer a {
 .jacket-seven h3 {
   margin-top: 0%;
   margin-bottom: 50%;
-  color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
 }
 
 .jacket-one img,
@@ -221,7 +221,7 @@ footer a {
 .jacket-six h2 a,
 .jacket-seven h2 a {
   text-decoration: none;
-  color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
 }
 /*Specific*/
 .specific-container {
@@ -265,7 +265,7 @@ footer a {
   font-family: Bebas Neue;
   font-size: 24px;
   color: white;
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--dark-blue);
   border: none;
   width: 8em;
   height: 3em;
@@ -274,8 +274,8 @@ footer a {
 }
 .specific-cart-button:hover {
   background-color: white;
-  color: rgba(10, 54, 65, 1);
-  border-color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
+  border-color: var(--dark-blue);
   border-style: solid;
   border-width: 5px;
   cursor: pointer;
@@ -306,7 +306,7 @@ footer a {
 }
 .cart-continue-button {
   font-size: 16px;
-  color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
   background-color: white;
   height: 2em;
 }
@@ -323,7 +323,7 @@ footer a {
   flex-direction: column;
   align-items: center;
   color: white;
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--dark-blue);
 }
 .checkout-forms {
   height: 90%;
@@ -353,7 +353,7 @@ footer a {
 }
 .purchase-button {
   margin-top: 20%;
-  color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
   background-color: white;
   border: none;
   font-size: 2rem;
@@ -363,7 +363,7 @@ footer a {
 .purchase-button:hover {
   border: solid white 1px;
   color: white;
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--dark-blue);
   cursor: pointer;
 }
 .purchase-button:active {
@@ -407,13 +407,13 @@ footer a {
   height: 3em;
   margin: 30% 0% 30% 0%;
   color: white;
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--dark-blue);
   font-family: Bebas Neue;
   font-size: 150%;
   border: none;
 }
 .checkout-success-receipt button:hover {
-  color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
   background-color: white;
   cursor: pointer;
 }
@@ -445,14 +445,14 @@ textarea {
 }
 .submit-button {
   margin-top: 20%;
-  color: rgba(10, 54, 65, 1);
+  color: var(--dark-blue);
   background-color: white;
   border: none;
   font-size: 2rem;
   font-family: Bebas Neue;
 }
 .contact-border {
-  border: solid rgba(10, 54, 65, 1) 3px;
+  border: solid var(--dark-blue) 3px;
   margin-top: 3%;
   width: 70%;
 }
@@ -588,7 +588,7 @@ textarea {
     font-family: Bebas Neue;
   }
   .contact-border {
-    border: solid rgba(10, 54, 65, 1) 3px;
+    border: solid var(--dark-blue) 3px;
     margin-top: 3%;
     width: 70%;
   }
@@ -739,7 +739,7 @@ textarea {
     font-family: Bebas Neue;
   }
   .contact-border {
-    border: solid rgba(10, 54, 65, 1) 3px;
+    border: solid var(--dark-blue) 3px;
     margin-top: 3%;
     width: 70%;
   }
@@ -890,7 +890,7 @@ textarea {
     font-family: Bebas Neue;
   }
   .contact-border {
-    border: solid rgba(10, 54, 65, 1) 3px;
+    border: solid var(--dark-blue) 3px;
     margin-top: 3%;
     width: 70%;
   }
