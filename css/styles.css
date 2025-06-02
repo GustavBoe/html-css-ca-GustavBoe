@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  font-family: Bebas Neue;
+  font-family: var(--heading-font);
   color: var(--dark-blue);
 }
 header {
@@ -256,13 +256,13 @@ footer a {
   font-size: 40px;
 }
 .specific-description {
-  font-family: Brygada1918;
+  font-family: var(--article-font);
   padding: 5%;
 }
 .specific-cart-button,
 .cart-buy-button,
 .cart-continue-button {
-  font-family: Bebas Neue;
+  font-family: var(--heading-font);
   font-size: 24px;
   color: white;
   background-color: var(--dark-blue);
@@ -357,7 +357,7 @@ footer a {
   background-color: white;
   border: none;
   font-size: 2rem;
-  font-family: Bebas Neue;
+  font-family: var(--heading-font);
   align-self: flex-end;
 }
 .purchase-button:hover {
@@ -379,7 +379,7 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Brygada1918;
+  font-family: var(--article-font);
   font-size: 100%;
 }
 /*Checkout-success*/
@@ -401,14 +401,14 @@ footer a {
   margin: 0%;
 }
 .checkout-success-receipt p {
-  font-family: Brygada1918;
+  font-family: var(--article-font);
 }
 .checkout-success-receipt button {
   height: 3em;
   margin: 30% 0% 30% 0%;
   color: white;
   background-color: var(--dark-blue);
-  font-family: Bebas Neue;
+  font-family: var(--heading-font);
   font-size: 150%;
   border: none;
 }
@@ -449,7 +449,7 @@ textarea {
   background-color: white;
   border: none;
   font-size: 2rem;
-  font-family: Bebas Neue;
+  font-family: var(--heading-font);
 }
 .contact-border {
   border: solid var(--dark-blue) 3px;
@@ -486,7 +486,7 @@ textarea {
 }
 .about-container p {
   align-self: flex-start;
-  font-family: Brygada1918;
+  font-family: var(--article-font);
   padding-left: 5%;
   width: 95%;
 }
@@ -585,7 +585,7 @@ textarea {
   .submit-button {
     margin-top: 10%;
     font-size: 2rem;
-    font-family: Bebas Neue;
+    font-family: var(--heading-font);
   }
   .contact-border {
     border: solid var(--dark-blue) 3px;
@@ -736,7 +736,7 @@ textarea {
   .submit-button {
     margin-top: 10%;
     font-size: 2rem;
-    font-family: Bebas Neue;
+    font-family: var(--heading-font);
   }
   .contact-border {
     border: solid var(--dark-blue) 3px;
@@ -887,7 +887,7 @@ textarea {
   .submit-button {
     margin-top: 10%;
     font-size: 2rem;
-    font-family: Bebas Neue;
+    font-family: var(--heading-font);
   }
   .contact-border {
     border: solid var(--dark-blue) 3px;
@@ -912,13 +912,26 @@ textarea {
     padding: 0% 7% 0% 7%;
   }
   /*About*/
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: start;
+    text-align: left;
+  }
   .about-container h1 {
     font-size: 64px;
   }
-  .about-container p {
-    font-size: 32px;
+  .about-text {
+    font-size: 2em;
     width: 80%;
     height: fit-content;
-    padding-left: 10%;
+    font-family: var(--article-font);
+    line-height: 2em;
+  }
+  .slogan {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: var(--heading-font);
   }
 }
