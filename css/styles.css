@@ -139,13 +139,19 @@ footer a {
   align-items: center;
   align-content: center;
 }
-.index-icon-container i {
-  font-size: 3em;
+.index-icon-container {
+  font-size: 1.5em;
+}
+.icon-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
   color: var(--dark-blue);
 }
 .running-icon i,
 .biking-icon i {
-  padding-top: 50px;
+  padding-top: 1rem;
 }
 /*Products*/
 .product-banner {
@@ -180,46 +186,19 @@ footer a {
   max-width: 30vw;
   height: auto;
 }
-.jacket-one,
-.jacket-two,
-.jacket-three,
-.jacket-four,
-.jacket-five,
-.jacket-six,
-.jacket-seven {
+.product {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px;
-}
-.jacket-one h3,
-.jacket-two h3,
-.jacket-three h3,
-.jacket-four h3,
-.jacket-five h3,
-.jacket-six h3,
-.jacket-seven h3 {
-  margin-top: 0%;
-  margin-bottom: 50%;
+  margin-bottom: 1rem;
   color: var(--dark-blue);
 }
 
-.jacket-one img,
-.jacket-two img,
-.jacket-three img,
-.jacket-four img,
-.jacket-five img,
-.jacket-six img,
-.jacket-seven img {
-  margin-top: 20%;
+.product img {
+  margin-top: 1rem;
 }
-.jacket-one h2 a,
-.jacket-two h2 a,
-.jacket-three h2 a,
-.jacket-four h2 a,
-.jacket-five h2 a,
-.jacket-six h2 a,
-.jacket-seven h2 a {
+.product a {
   text-decoration: none;
   color: var(--dark-blue);
 }
