@@ -48,10 +48,11 @@ footer {
   padding: 10%;
   display: grid;
   grid-gap: 5%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: 60% 70%;
   align-items: center;
   align-content: center;
+  text-align: center;
 }
 
 footer p,
