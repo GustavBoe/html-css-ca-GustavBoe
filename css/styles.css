@@ -220,14 +220,14 @@ footer a {
 }
 /*Specific*/
 .specific-container {
-  margin-top: 10%;
+  margin-top: 3rem;
   margin-bottom: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .specific-image {
-  width: 50%;
+  width: 15rem;
   height: auto;
 }
 .specific-icon-container {
@@ -252,7 +252,7 @@ footer a {
 }
 .specific-description {
   font-family: var(--article-font);
-  padding: 5%;
+  width: 20rem;
 }
 .specific-cart-button,
 .cart-buy-button,
@@ -535,33 +535,8 @@ textarea {
     grid-template-columns: auto auto;
   }
   /*Specific*/
-  .specific-model {
-    font-size: 42px;
-  }
-  .specific-price {
-    font-size: 36px;
-  }
   .specific-description {
-    font-size: 150%;
-    padding-left: 8%;
-  }
-  .specific-hiking-icon,
-  .specific-rain-icon,
-  .specific-wind-icon {
-    margin: 20%;
-  }
-  .specific-icon-container i {
-    font-size: 40px;
-  }
-  .specific-hiking-icon i {
-    font-size: 44px;
-  }
-  .specific-cart-button {
-    font-size: 32px;
-    width: 9em;
-    height: 3em;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    width: 25rem;
   }
   /*Contact*/
   .contact-border {
@@ -602,26 +577,8 @@ textarea {
     justify-content: space-evenly;
   }
   /*Specific*/
-  .specific-model {
-    font-size: 42px;
-  }
-  .specific-price {
-    font-size: 36px;
-  }
   .specific-description {
-    font-size: 150%;
-    padding-left: 8%;
-  }
-  .specific-hiking-icon,
-  .specific-rain-icon,
-  .specific-wind-icon {
-    margin: 40%;
-  }
-  .specific-icon-container i {
-    font-size: 45px;
-  }
-  .specific-hiking-icon i {
-    font-size: 49px;
+    width: 30rem;
   }
   .specific-cart-button {
     font-size: 32px;
@@ -679,27 +636,7 @@ textarea {
   }
 
   /*Specific*/
-  .specific-model {
-    font-size: 42px;
-  }
-  .specific-price {
-    font-size: 36px;
-  }
-  .specific-description {
-    font-size: 150%;
-    padding-left: 8%;
-  }
-  .specific-hiking-icon,
-  .specific-rain-icon,
-  .specific-wind-icon {
-    margin: 40%;
-  }
-  .specific-icon-container i {
-    font-size: 45px;
-  }
-  .specific-hiking-icon i {
-    font-size: 49px;
-  }
+
   .specific-cart-button,
   .cart-buy-button,
   .cart-continue-button {
@@ -710,26 +647,7 @@ textarea {
     margin-bottom: 2em;
   }
   /*Cart*/
-  .cart-heading {
-    font-size: 3em;
-  }
-  .cart-image {
-    width: 30%;
-    height: auto;
-    margin-bottom: 4em;
-  }
-  .cart-jacket-text {
-    font-size: 36px;
-  }
-  .cart-total {
-    font-size: 22px;
-  }
-  .cart-buy-button {
-    margin-top: 3em;
-  }
-  .cart-continue-button {
-    font-size: 14px;
-  }
+
   /*Contact*/
 
   /*About*/
