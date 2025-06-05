@@ -65,6 +65,7 @@ footer a {
   color: white;
   font-size: 3vh;
 }
+
 /* Index*/
 .index-banner {
   position: relative;
@@ -156,13 +157,12 @@ footer a {
 }
 /*Products*/
 .product-banner {
-  position: relative;
-  height: 20vh;
-  padding-top: 1%;
+  text-align: center;
+  align-items: center;
 }
 .product-banner-img {
   width: 100%;
-  height: 20vh;
+  height: 20rem;
   object-fit: cover;
   object-position: 10% 25%;
   margin: 0;
@@ -171,37 +171,52 @@ footer a {
   color: white;
   position: absolute;
   inset: 0;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-self: center;
+  font-size: 4em;
+  padding-bottom: 9rem;
 }
-.all-jackets {
-  padding-top: 10%;
+.product-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
+  margin-top: 7.5rem;
 }
-.all-jackets img {
-  max-width: 30vw;
-  height: auto;
-}
+
 .product {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  text-decoration: none;
   align-items: center;
   border: 1px;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   color: var(--dark-blue);
 }
-
+.product-description {
+  display: flex;
+  font-size: 1em;
+  max-width: 15rem;
+}
+.old-price {
+  text-decoration: line-through;
+}
 .product img {
-  margin-top: 1rem;
+  height: 7rem;
 }
 .product a {
   text-decoration: none;
   color: var(--dark-blue);
+}
+.price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 15rem;
+}
+.product:hover {
+  border: solid, var(--dark-blue), 0.1em;
 }
 /*Specific*/
 .specific-container {
@@ -252,7 +267,8 @@ footer a {
   margin-top: 3em;
   margin-bottom: 3em;
 }
-.specific-cart-button:hover {
+.specific-cart-button:hover,
+.cart-buy-button:active {
   background-color: white;
   color: var(--dark-blue);
   border-color: var(--dark-blue);
@@ -271,9 +287,8 @@ footer a {
   margin-bottom: 1em;
 }
 .cart-image {
-  width: 30%;
-  height: auto;
-  margin-bottom: 4em;
+  height: 7rem;
+  margin-top: 2rem;
 }
 .cart-jacket-text {
   font-size: 18px;
@@ -282,19 +297,22 @@ footer a {
   font-size: 22px;
 }
 .cart-buy-button {
-  margin-top: 3em;
+  margin-top: 1em;
 }
+.cart-buy-button:hover {
+  cursor: pointer;
+}
+
 .cart-continue-button {
-  font-size: 16px;
+  font-size: 1em;
   color: var(--dark-blue);
   background-color: white;
   height: 2em;
 }
 /*Checkout*/
 .checkout-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  font-size: 4em;
 }
 .checkout-container {
   height: fit-content;
@@ -312,33 +330,30 @@ footer a {
   margin-top: 1em;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
 }
 .checkout-forms i {
   margin: 1em 1em 0em 0em;
 }
-.checkout-forms input[type="year"] {
-  width: 3em;
+
+.checkout-forms input[type="year"],
+.checkout-forms input[type="tel"],
+.checkout-forms input[type="email"] {
   margin-top: 1em;
   text-align: center;
 }
+.checkout-forms input[type="year"],
 .checkout-forms input[type="tel"] {
   width: 3em;
-  margin-top: 1em;
-  text-align: center;
-}
-.checkout-forms input[type="email"] {
-  min-width: 100%;
 }
 .purchase-button {
-  margin-top: 20%;
+  margin-top: 1rem;
   color: var(--dark-blue);
   background-color: white;
   border: none;
   font-size: 2rem;
   font-family: var(--heading-font);
-  align-self: flex-end;
 }
 .purchase-button:hover {
   border: solid white 1px;
@@ -351,16 +366,19 @@ footer a {
   background-color: rgba(10, 54, 65, 1);
 }
 .summary-container img {
-  width: 30%;
-  height: auto;
+  width: 3rem;
 }
 .summary-container {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   font-family: var(--article-font);
-  font-size: 100%;
+  font-size: 0.8em;
+}
+.checkout-total-text {
+  text-decoration: underline;
 }
 /*Checkout-success*/
 .checkout-success-receipt {
@@ -398,6 +416,9 @@ footer a {
   cursor: pointer;
 }
 /*Contact*/
+.contact-heading {
+  font-size: 3em;
+}
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -413,40 +434,51 @@ footer a {
 }
 input[type="text"] {
   margin: 1em 0em 0em 0em;
-  min-width: 90%;
+  min-width: 15rem;
 }
 .contact-forms i {
-  margin: 10% 0% 10% 0%;
+  margin: 0.5em;
 }
 textarea {
   /*Code borrowed from W3Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_form_textarea*/
-  width: 80%;
-  height: 110px;
+  width: 15rem;
+  height: 10rem;
 }
 .submit-button {
-  margin-top: 20%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   color: var(--dark-blue);
   background-color: white;
-  border: none;
+  border: solid var(--dark-blue) 0.1em;
   font-size: 2rem;
   font-family: var(--heading-font);
 }
+.submit-button:hover {
+  color: white;
+  background-color: var(--dark-blue);
+}
+.submit-button:active {
+  color: var(--dark-blue);
+  background-color: white;
+}
 .contact-border {
   border: solid var(--dark-blue) 3px;
-  margin-top: 3%;
-  width: 70%;
+  margin-top: 2rem;
+  width: 20rem;
+  text-align: center;
 }
 .contact-info {
   height: fit-content;
+  min-width: 20rem;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
 }
 .contact-info h2,
 .contact-location h2 {
-  font-size: 80%;
-  text-decoration: none;
+  font-size: 1em;
 }
 .contact-phone,
 .contact-fax,
@@ -454,8 +486,11 @@ textarea {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 0% 5% 0% 5%;
+  text-align: left;
+  min-width: 13rem;
+}
+.contact-info i {
+  margin-right: 1em;
 }
 /*About*/
 .about-container {
@@ -494,26 +529,10 @@ textarea {
     font-size: 4em;
   }
   /*Products*/
-  .product-banner-text {
-    font-size: 4vh;
-  }
-  .all-jackets {
-    /*Code borrowed from the user Shanomurphy from https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row*/
-    padding-top: 10%;
+
+  .product-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-  }
-  .all-jackets img {
-    max-width: 20vw;
-    height: auto;
-    margin: 0% 5% 0% 0%;
-  }
-  .jacket-five,
-  .jacket-six,
-  .jacket-seven {
-    text-align: center;
+    grid-template-columns: auto auto;
   }
   /*Specific*/
   .specific-model {
@@ -537,9 +556,7 @@ textarea {
   .specific-hiking-icon i {
     font-size: 44px;
   }
-  .specific-cart-button,
-  .cart-buy-button,
-  .cart-continue-button {
+  .specific-cart-button {
     font-size: 32px;
     width: 9em;
     height: 3em;
@@ -547,54 +564,15 @@ textarea {
     margin-bottom: 2em;
   }
   /*Contact*/
-  .contact-forms {
-    height: fit-content;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  textarea {
-    width: 80%;
-    height: 100px;
-  }
-  .contact-forms i {
-    margin: 10% 0% 10% 0%;
-  }
-  .submit-button {
-    margin-top: 10%;
-    font-size: 2rem;
-    font-family: var(--heading-font);
-  }
   .contact-border {
-    border: solid var(--dark-blue) 3px;
-    margin-top: 3%;
-    width: 70%;
-  }
-  .contact-info {
-    height: 150px;
-    justify-content: center;
-  }
-  .contact-info h2,
-  .contact-location h2 {
-    font-size: 20px;
-  }
-  .contact-phone,
-  .contact-fax,
-  .contact-location {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0% 7% 0% 7%;
+    width: 25rem;
   }
   /*About*/
   .about-container h1 {
     font-size: 40px;
   }
 }
-@media (min-width: 769px) and (max-width: 1279px) {
+@media (min-width: 769px) {
   /*All*/
   .navbar a {
     font-size: 180%;
@@ -613,37 +591,15 @@ textarea {
   }
   /*Products*/
   .product-banner-text {
-    font-size: 4vh;
+    padding-bottom: 8.5rem;
   }
-  .all-jackets {
-    padding-top: 5%;
+  .product-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto;
   }
-  .jacket-one h3,
-  .jacket-two h3,
-  .jacket-three h3,
-  .jacket-four h3,
-  .jacket-five h3,
-  .jacket-six h3,
-  .jacket-seven h3 {
-    margin-bottom: 15%;
-  }
-  .jacket-one img,
-  .jacket-two img,
-  .jacket-three img,
-  .jacket-four img,
-  .jacket-five img,
-  .jacket-six img,
-  .jacket-seven img {
-    margin-top: 20%;
-  }
-  .jacket-five,
-  .jacket-six,
-  .jacket-seven {
-    text-align: center;
+  .price-container {
+    display: flex;
+    justify-content: space-evenly;
   }
   /*Specific*/
   .specific-model {
@@ -667,9 +623,7 @@ textarea {
   .specific-hiking-icon i {
     font-size: 49px;
   }
-  .specific-cart-button,
-  .cart-buy-button,
-  .cart-continue-button {
+  .specific-cart-button {
     font-size: 32px;
     width: 9em;
     height: 3em;
@@ -680,65 +634,10 @@ textarea {
   .cart-heading {
     font-size: 3em;
   }
-  .cart-image {
-    width: 30%;
-    height: auto;
-    margin-bottom: 4em;
-  }
-  .cart-jacket-text {
-    font-size: 36px;
-  }
-  .cart-total {
-    font-size: 22px;
-  }
-  .cart-buy-button {
-    margin-top: 3em;
-  }
-  .cart-continue-button {
-    font-size: 14px;
-  }
+
   /*Contact*/
-  .contact-forms {
-    height: fit-content;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  textarea {
-    width: 80%;
-    height: 100px;
-  }
-  .contact-forms i {
-    margin: 10% 0% 10% 0%;
-  }
-  .submit-button {
-    margin-top: 10%;
-    font-size: 2rem;
-    font-family: var(--heading-font);
-  }
   .contact-border {
-    border: solid var(--dark-blue) 3px;
-    margin-top: 3%;
-    width: 70%;
-  }
-  .contact-info {
-    height: 150px;
-    justify-content: center;
-  }
-  .contact-info h2,
-  .contact-location h2 {
-    font-size: 20px;
-  }
-  .contact-phone,
-  .contact-fax,
-  .contact-location {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0% 7% 0% 7%;
+    width: 30rem;
   }
   /*About*/
   .about-container h1 {
@@ -747,6 +646,9 @@ textarea {
 }
 @media (min-width: 1280px) {
   /*All*/
+  header {
+    margin-bottom: 0%;
+  }
   .navbar a {
     font-size: 180%;
   }
@@ -758,44 +660,24 @@ textarea {
     margin-bottom: 15%;
     padding-bottom: 5%;
   }
+  main {
+    margin-top: 0%;
+    padding: 0%;
+  }
   /*Index*/
   .index-icon-container i {
     font-size: 5em;
   }
   /*Products*/
-  .product-banner-text {
-    font-size: 4vh;
+  .product-banner {
+    padding-top: 0%;
+    align-items: center;
   }
-  .all-jackets {
-    padding-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+  .product-banner-img {
+    height: 13rem;
+    padding: 0%;
   }
-  .jacket-one h3,
-  .jacket-two h3,
-  .jacket-three h3,
-  .jacket-four h3,
-  .jacket-five h3,
-  .jacket-six h3,
-  .jacket-seven h3 {
-    margin-bottom: 15%;
-  }
-  .jacket-one img,
-  .jacket-two img,
-  .jacket-three img,
-  .jacket-four img,
-  .jacket-five img,
-  .jacket-six img,
-  .jacket-seven img {
-    margin-top: 20%;
-  }
-  .jacket-five,
-  .jacket-six,
-  .jacket-seven {
-    text-align: center;
-  }
+
   /*Specific*/
   .specific-model {
     font-size: 42px;
@@ -849,48 +731,7 @@ textarea {
     font-size: 14px;
   }
   /*Contact*/
-  .contact-forms {
-    height: fit-content;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  textarea {
-    width: 80%;
-    height: 100px;
-  }
-  .contact-forms i {
-    margin: 10% 0% 10% 0%;
-  }
-  .submit-button {
-    margin-top: 10%;
-    font-size: 2rem;
-    font-family: var(--heading-font);
-  }
-  .contact-border {
-    border: solid var(--dark-blue) 3px;
-    margin-top: 3%;
-    width: 70%;
-  }
-  .contact-info {
-    height: 150px;
-    justify-content: center;
-  }
-  .contact-info h2,
-  .contact-location h2 {
-    font-size: 20px;
-  }
-  .contact-phone,
-  .contact-fax,
-  .contact-location {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0% 7% 0% 7%;
-  }
+
   /*About*/
   .about-container {
     display: flex;
